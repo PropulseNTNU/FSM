@@ -1,3 +1,9 @@
-﻿  FSM_rocket.cpp
-  FSM_rocket.vcxproj -> C:\Users\Kevin K. Kaldvansvik\documents\visual studio 2015\Projects\FSM_rocket\Debug\FSM_rocket.exe
-  FSM_rocket.vcxproj -> C:\Users\Kevin K. Kaldvansvik\documents\visual studio 2015\Projects\FSM_rocket\Debug\FSM_rocket.pdb (Partial PDB)
+﻿  states.cpp
+  idle_state.cpp
+  armed_state.cpp
+  Generating Code...
+  Compiling...
+  FSM.cpp
+  Generating Code...
+  FSM_rocket.vcxproj -> C:\Users\Kevin K. Kaldvansvik\documents\visual studio 2015\Projects\FSM_rocket\Debug\FSM.exe
+  FSM_rocket.vcxproj -> C:\Users\Kevin K. Kaldvansvik\documents\visual studio 2015\Projects\FSM_rocket\Debug\FSM.pdb (Partial PDB)

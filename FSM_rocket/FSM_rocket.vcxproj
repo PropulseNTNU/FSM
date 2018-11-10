@@ -22,6 +22,7 @@
     <ProjectGuid>{83941089-C0F0-4AD2-AE22-9F420BFC4B49}</ProjectGuid>
     <RootNamespace>FSM_rocket</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>FSM</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -110,7 +111,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FSM_rocket.cpp" />
+    <ClCompile Include="armed_state.cpp" />
+    <ClCompile Include="FSM.cpp" />
+    <ClCompile Include="idle_state.cpp" />
+    <ClCompile Include="states.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="armed_state.h" />
+    <ClInclude Include="idle_state.h" />
+    <ClInclude Include="states.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
