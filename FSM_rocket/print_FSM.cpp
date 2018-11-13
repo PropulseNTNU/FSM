@@ -1,40 +1,25 @@
 using namespace std;
 #include "print_FSM.h"
+#include "states.h"
+#include <iostream>
+#include <string>
+
+const char states[NUM_STATES][15] = {"IDLE", "ARMED", "LIFTOFF",
+								"BURNOUT", "AIRBRAKES", "APOGEE",
+								"LANDED"};
 
 void print_FSM(state_code cur_state, return_code ret_code) {
 
-	cout << "***********************" << endl;
-	string state = "Current state:  ";
-	if (cur_state == IDLE) {
-		state += "IDLE";
-	}
-	/*else if (cur_state == ARMED) {
-		state += "ARMED";
-	}
-	else if (cur_state == LIFTOFF) {
-		state += "LIFTOFF";
-	}
-	else if (cur_state == BURNOUT) {
-		state += "BURNOUT";
-	}
-	else if (cur_state == AIRBRAKES) {
-		state += "AIRBRAKES";
-	}
-	else if (cur_state == APOGEE) {
-		state += "APOGEE";
-	}
-	else if (cur_state == LANDED) {
-		state += "LANDED";
-	}
-	*/
-	cout << state << endl;
+	printf("***********************\n");
+	
+	printf("Current state:  %s\n", states[cur_state]);
 
-	if (ret_code == OK) {
-		cout << "Transition: OK" << endl;
+	if (ret_code == NEXT) {
+		printf("Transition: Next\n");
 	}
 	else {
-		cout << "Transition: Repeat" << endl;
+		printf("Transition: Repeat\n");
 	}
-	cout << "***********************" << endl;
+	printf("***********************\n");
 
 }

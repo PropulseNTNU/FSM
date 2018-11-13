@@ -1,6 +1,6 @@
 using namespace std;
-//#include "burnout_state.h"
-#include "transitions.h"
+#include "states.h"
+#include <iostream>
 
 //Next state Aibrakes should be triggered once a_z = 0.
 int burnout_state(void) {
@@ -9,7 +9,7 @@ int burnout_state(void) {
 	cout << "Waiting for z-accel input: must be less or equal to 0" << endl;
 	cin >> z_accel;
 	if (z_accel <= 0) {
-		ret_code = OK;
+		ret_code = NEXT;
 	}
 	else {
 		ret_code = REPEAT;

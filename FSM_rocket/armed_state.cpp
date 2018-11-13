@@ -1,6 +1,5 @@
 using namespace std;
-#include "armed_state.h"
-#include "transitions.h"
+#include "states.h"
 #include <iostream>
 
 int armed_state(void) {

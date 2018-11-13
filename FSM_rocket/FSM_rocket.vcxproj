@@ -111,15 +111,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="airbrakes_state.cpp" />
+    <ClCompile Include="apogee_state.cpp" />
     <ClCompile Include="armed_state.cpp" />
+    <ClCompile Include="burnout_state.cpp" />
     <ClCompile Include="FSM.cpp" />
     <ClCompile Include="idle_state.cpp" />
+    <ClCompile Include="landed_state.cpp" />
+    <ClCompile Include="liftoff_state.cpp" />
+    <ClCompile Include="print_FSM.cpp" />
     <ClCompile Include="states.cpp" />
+    <ClCompile Include="transitions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="airbrakes_state.h" />
+    <ClInclude Include="apogee_state.h" />
     <ClInclude Include="armed_state.h" />
+    <ClInclude Include="burnout_state.h" />
     <ClInclude Include="idle_state.h" />
+    <ClInclude Include="landed_state.h" />
+    <ClInclude Include="liftoff_state.h" />
+    <ClInclude Include="print_FSM.h" />
     <ClInclude Include="states.h" />
+    <ClInclude Include="transitions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

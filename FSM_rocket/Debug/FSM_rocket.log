@@ -1,8 +1,4 @@
-﻿  states.cpp
-  idle_state.cpp
-  armed_state.cpp
-  Generating Code...
-  Compiling...
+﻿  transitions.cpp
   FSM.cpp
   Generating Code...
   FSM_rocket.vcxproj -> C:\Users\Kevin K. Kaldvansvik\documents\visual studio 2015\Projects\FSM_rocket\Debug\FSM.exe

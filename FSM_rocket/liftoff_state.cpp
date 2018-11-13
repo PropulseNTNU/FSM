@@ -1,6 +1,6 @@
 using namespace std;
-//#include "liftoff_state.h"
-#include "transitions.h"
+#include "states.h"
+#include <iostream>
 
 //When allerations has "calmed down", trigger next state, Burnout
 int liftoff_state(void) {
@@ -9,7 +9,7 @@ int liftoff_state(void) {
 	cout << "Waiting for z-accel input: must be less than 5" << endl;
 	cin >> z_accel;
 	if (z_accel < 5) {
-		ret_code = OK;
+		ret_code = NEXT;
 	}
 	else {
 		ret_code = REPEAT;

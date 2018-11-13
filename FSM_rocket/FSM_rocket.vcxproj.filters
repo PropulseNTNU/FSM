@@ -24,6 +24,27 @@
     <ClInclude Include="armed_state.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="transitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="liftoff_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="burnout_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="airbrakes_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apogee_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="landed_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="print_FSM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FSM.cpp">
@@ -32,10 +53,31 @@
     <ClCompile Include="idle_state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="states.cpp">
+    <ClCompile Include="armed_state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="armed_state.cpp">
+    <ClCompile Include="transitions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liftoff_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="burnout_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="airbrakes_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apogee_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="landed_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="print_FSM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="states.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

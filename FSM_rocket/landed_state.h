@@ -1,6 +1,7 @@
-#pragma once
-#include "transitions.h"
-#include <iostream>
+#ifndef LANDED_STATE_H
+#define LANDED_STATE_H
 
 //Does nothing
 int landed_state(void);
+
+#endif

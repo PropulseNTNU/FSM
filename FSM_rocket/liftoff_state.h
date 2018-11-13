@@ -1,7 +1,6 @@
-#pragma once
-//#include "states.h"
-#include "transitions.h"
-#include <iostream>
+#ifndef LIFTOFF_STATE_H
+#define LIFTOFF_STATE_H
 
-//When allerations has "calmed down", trigger next state, Burnout
 int liftoff_state(void);
+
+#endif
