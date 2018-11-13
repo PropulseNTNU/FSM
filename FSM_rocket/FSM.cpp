@@ -15,6 +15,7 @@ int main(int argc, char *argv[]) {
 	state_code cur_state = START_STATE;
 	return_code ret_code = REPEAT;
 
+	//printing initial state and return code
 	print_FSM(cur_state, ret_code);
 
 	//Creating pointer to state function
@@ -24,7 +25,7 @@ int main(int argc, char *argv[]) {
 	state_func state_funcs[NUM_STATES] =
 	{ idle_state, armed_state, liftoff_state,
 	burnout_state, airbrakes_state, apogee_state,
-	landed_state};
+	drogue_state, chute_state, landed_state};
 
 	//Running the FSM until LANDED state
 	while (cur_state != END_STATE) {
@@ -32,7 +33,6 @@ int main(int argc, char *argv[]) {
 		ret_code = return_code(state_function());
 		cur_state = lookup_transition(cur_state, ret_code);
 		print_FSM(cur_state, ret_code);
-
 	}
 	system("pause");
 	return 0;

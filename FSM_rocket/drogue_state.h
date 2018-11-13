@@ -1,11 +1,11 @@
-#ifndef AIRBRAKES_STATE_H
-#define AIRBRAKES_STATE_H
+#ifndef CHUTE_STATE_H
+#define CHUTE_STATE_H
 
 /*
 	Comment what this function does.
 	Also remember to explain what it returns and why.
 */
 
-int airbrakes_state(void);
+int chute_state(void);
 
 #endif

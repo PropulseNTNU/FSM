@@ -45,6 +45,12 @@
     <ClInclude Include="print_FSM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="drogue_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chute_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FSM.cpp">
@@ -77,7 +83,10 @@
     <ClCompile Include="print_FSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="states.cpp">
+    <ClCompile Include="drogue_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chute_state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

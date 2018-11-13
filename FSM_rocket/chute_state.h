@@ -1,11 +1,11 @@
-#ifndef AIRBRAKES_STATE_H
-#define AIRBRAKES_STATE_H
+#ifndef DROGUE_STATE_H
+#define DROGUE_STATE_H
 
 /*
 	Comment what this function does.
 	Also remember to explain what it returns and why.
 */
 
-int airbrakes_state(void);
+int drogue_state(void);
 
 #endif

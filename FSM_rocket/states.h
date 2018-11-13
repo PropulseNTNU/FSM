@@ -8,6 +8,8 @@
 #include "burnout_state.h"
 #include "airbrakes_state.h"
 #include "apogee_state.h"
+#include "drogue_state.h"
+#include "chute_state.h"
 #include "landed_state.h"
 
 //Defining the start and end states
@@ -17,7 +19,7 @@
 //All posible states, NUM_STATES is not a state
 enum state_code {
 	IDLE, ARMED, LIFTOFF, BURNOUT, AIRBRAKES,
-	APOGEE, LANDED, NUM_STATES
+	APOGEE, DROGUE, CHUTE, LANDED, NUM_STATES
 };
 
 //The outcomes of running a state-function

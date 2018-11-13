@@ -6,16 +6,23 @@
 
 //All the allowed transitions
 struct transition state_transitions[] = {
-	{ IDLE,			REPEAT,			IDLE		},
-	{ IDLE,			NEXT,			ARMED		},
-	{ ARMED,		REPEAT,			ARMED		},
-	{ ARMED,		NEXT,			LIFTOFF		},
-	{ LIFTOFF,		REPEAT,			LIFTOFF		},
-	{ LIFTOFF,		NEXT,			BURNOUT		},
-	{ BURNOUT,		REPEAT,			BURNOUT		},
-	{ BURNOUT,		NEXT,			AIRBRAKES	},
-	{ AIRBRAKES,	REPEAT,			AIRBRAKES	},
-	{ AIRBRAKES,	NEXT,			APOGEE		}
+	{	IDLE,			REPEAT,			IDLE		},
+	{	IDLE,			NEXT,			ARMED		},
+	{	ARMED,			REPEAT,			ARMED		},
+	{	ARMED,			NEXT,			LIFTOFF		},
+	{	LIFTOFF,		REPEAT,			LIFTOFF		},
+	{	LIFTOFF,		NEXT,			BURNOUT		},
+	{	BURNOUT,		REPEAT,			BURNOUT		},
+	{	BURNOUT,		NEXT,			AIRBRAKES	},
+	{	AIRBRAKES,		REPEAT,			AIRBRAKES	},
+	{	AIRBRAKES,		NEXT,			APOGEE		},
+	{	APOGEE,			REPEAT,			APOGEE		},
+	{	APOGEE,			NEXT,			DROGUE		},
+	{	DROGUE,			REPEAT,			DROGUE		},
+	{	DROGUE,			NEXT,			CHUTE		},
+	{	CHUTE,			REPEAT,			CHUTE		},
+	{	CHUTE,			NEXT,			LANDED		},
+	{	LANDED,			REPEAT,			LANDED		}
 };
 
 //Lookup if a new transition should take place, return the next state
