@@ -1,0 +1,78 @@
+airbrakes_state.o: FSM_rocket/airbrakes_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+FSM.o: FSM_rocket/FSM.cpp FSM_rocket/states.h FSM_rocket/idle_state.h \
+ FSM_rocket/armed_state.h FSM_rocket/liftoff_state.h \
+ FSM_rocket/burnout_state.h FSM_rocket/airbrakes_state.h \
+ FSM_rocket/apogee_state.h FSM_rocket/drogue_state.h \
+ FSM_rocket/chute_state.h FSM_rocket/landed_state.h \
+ FSM_rocket/transitions.h FSM_rocket/print_FSM.h
+landed_state.o: FSM_rocket/landed_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+armed_state.o: FSM_rocket/armed_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+print_FSM.o: FSM_rocket/print_FSM.cpp FSM_rocket/print_FSM.h \
+ FSM_rocket/states.h FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+chute_state.o: FSM_rocket/chute_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+burnout_state.o: FSM_rocket/burnout_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+liftoff_state.o: FSM_rocket/liftoff_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+drogue_state.o: FSM_rocket/drogue_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+idle_state.o: FSM_rocket/idle_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+apogee_state.o: FSM_rocket/apogee_state.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+transitions.o: FSM_rocket/transitions.cpp FSM_rocket/transitions.h \
+ FSM_rocket/states.h FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
+states.o: FSM_rocket/states.cpp FSM_rocket/states.h \
+ FSM_rocket/idle_state.h FSM_rocket/armed_state.h \
+ FSM_rocket/liftoff_state.h FSM_rocket/burnout_state.h \
+ FSM_rocket/airbrakes_state.h FSM_rocket/apogee_state.h \
+ FSM_rocket/drogue_state.h FSM_rocket/chute_state.h \
+ FSM_rocket/landed_state.h
