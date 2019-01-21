@@ -8,7 +8,7 @@ const char states[NUM_STATES][15] = {"IDLE", "ARMED", "LIFTOFF",
 								"BURNOUT", "AIRBRAKES", "APOGEE",
 								"LANDED"};
 
-void print_FSM(state_code cur_state, return_code ret_code) {
+void print_FSM(state cur_state, return_code ret_code) {
 
 	printf("***********************\n");
 	

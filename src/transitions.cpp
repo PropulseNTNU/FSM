@@ -1,10 +1,11 @@
 #include "transitions.h"
 #include "states.h"
-#include <iostream>
-#include <stdio.h>
-#include <string>
 
-//All the allowed transitions
+/*
+	First element in array is the source state. The second
+	element is the state function return code, the third
+	element contains the next state.
+*/ 
 struct transition state_transitions[] = {
 	{	IDLE,			REPEAT,			IDLE		},
 	{	IDLE,			NEXT,			ARMED		},
@@ -25,13 +26,15 @@ struct transition state_transitions[] = {
 	{	LANDED,			REPEAT,			LANDED		}
 };
 
-//Lookup if a new transition should take place, return the next state
-state_code lookup_transition(state_code cur_state, return_code rc) {
-	state_code next_state = cur_state;
+/*
+	
+*/
+state lookup_transition(state current_state, return_code rc) {
+	state next_state = current_state;
 
 	//Lag matrise her, siden det er enums!
 	for (auto transition : state_transitions) {
-		if ((transition.source_state == cur_state) && (transition.ret_code == rc)) {
+		if ((transition.source_state == current_state) && (transition.ret_code == rc)) {
 			next_state = transition.destination_state;
 			break;
 		}

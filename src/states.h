@@ -12,12 +12,8 @@
 #include "chute_state.h"
 #include "landed_state.h"
 
-//Defining the start and end states
-#define START_STATE IDLE
-#define END_STATE LANDED
-
 //All posible states, NUM_STATES is not a state
-enum state_code {
+enum state {
 	IDLE, ARMED, LIFTOFF, BURNOUT, AIRBRAKES,
 	APOGEE, DROGUE, CHUTE, LANDED, NUM_STATES
 };
@@ -28,7 +24,7 @@ enum return_code { NEXT, REPEAT };
 typedef int(*state_func)(void);
 
 //se på denne, funker ikke c, namespace funker ikke i c
-//namespace state_code {
+//namespace state {
 //	enum type {
 //		IDLE/* , ARMED, LIFTOFF, BURNOUT,
 //		AIRBRAKES, APOGEE, LANDED*/
